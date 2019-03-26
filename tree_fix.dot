@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="G2 <= 10.5\ngini = 0.914\nsamples = 296\nvalue = [23, 6, 12, 8, 25, 19, 42, 40, 26, 24, 20, 22\n13, 6, 7, 2, 1]", fillcolor="#39e59502"] ;
+1 [label="G2 <= 8.5\ngini = 0.843\nsamples = 144\nvalue = [23, 6, 12, 8, 25, 18, 37, 13, 2, 0, 0, 0, 0\n0, 0, 0, 0]", fillcolor="#39e5951a"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="absences <= 1.0\ngini = 0.811\nsamples = 71\nvalue = [20, 6, 12, 7, 17, 5, 2, 2, 0, 0, 0, 0, 0, 0\n0, 0, 0]", fillcolor="#e581390e"] ;
+1 -> 2 ;
+3 [label="gini = 0.295\nsamples = 24\nvalue = [20, 0, 1, 0, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0\n0, 0, 0]", fillcolor="#e58139d1"] ;
+2 -> 3 ;
+4 [label="gini = 0.791\nsamples = 47\nvalue = [0, 6, 11, 7, 15, 5, 2, 1, 0, 0, 0, 0, 0, 0\n0, 0, 0]", fillcolor="#58e5391c"] ;
+2 -> 4 ;
+5 [label="G1 <= 11.5\ngini = 0.701\nsamples = 73\nvalue = [3, 0, 0, 1, 8, 13, 35, 11, 2, 0, 0, 0, 0, 0\n0, 0, 0]", fillcolor="#39e5955e"] ;
+1 -> 5 ;
+6 [label="gini = 0.672\nsamples = 68\nvalue = [3, 0, 0, 1, 8, 13, 35, 7, 1, 0, 0, 0, 0, 0\n0, 0, 0]", fillcolor="#39e59566"] ;
+5 -> 6 ;
+7 [label="gini = 0.32\nsamples = 5\nvalue = [0, 0, 0, 0, 0, 0, 0, 4, 1, 0, 0, 0, 0, 0\n0, 0, 0]", fillcolor="#39e5d1bf"] ;
+5 -> 7 ;
+8 [label="G2 <= 13.5\ngini = 0.868\nsamples = 152\nvalue = [0, 0, 0, 0, 0, 1, 5, 27, 24, 24, 20, 22, 13\n6, 7, 2, 1]", fillcolor="#39e5d106"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="G2 <= 12.5\ngini = 0.755\nsamples = 87\nvalue = [0, 0, 0, 0, 0, 1, 5, 27, 24, 21, 9, 0, 0, 0\n0, 0, 0]", fillcolor="#39e5d10c"] ;
+8 -> 9 ;
+10 [label="gini = 0.683\nsamples = 59\nvalue = [0, 0, 0, 0, 0, 1, 5, 26, 19, 6, 2, 0, 0, 0\n0, 0, 0]", fillcolor="#39e5d12d"] ;
+9 -> 10 ;
+11 [label="gini = 0.617\nsamples = 28\nvalue = [0, 0, 0, 0, 0, 0, 0, 1, 5, 15, 7, 0, 0, 0\n0, 0, 0]", fillcolor="#3981e561"] ;
+9 -> 11 ;
+12 [label="G2 <= 16.5\ngini = 0.793\nsamples = 65\nvalue = [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 11, 22, 13, 6\n7, 2, 1]", fillcolor="#6a39e52c"] ;
+8 -> 12 ;
+13 [label="gini = 0.718\nsamples = 53\nvalue = [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 11, 22, 13, 3\n1, 0, 0]", fillcolor="#6a39e539"] ;
+12 -> 13 ;
+14 [label="gini = 0.653\nsamples = 12\nvalue = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3\n6, 2, 1]", fillcolor="#e539a955"] ;
+12 -> 14 ;
+}
